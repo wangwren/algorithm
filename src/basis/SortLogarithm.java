@@ -15,6 +15,9 @@ public class SortLogarithm {
     //生成随机数组
     public static int[] generateRandomArray(int maxSize,int maxValue){
         //定义数组大小
+        //Math.random() -> [0,1)所有的小数，等概率返回一个
+        //Math.random() * N -> [0,N)所有小数，等概率返回一个
+        //(int)(Math.random() * N) -> [0,N-1]所有整数，等概率返回一个
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
             //生成随机值
