@@ -131,24 +131,20 @@ public class Main01 {
      */
     public void selectSort(List<User> users,Integer sort){
         for (int i = 1; i < users.size(); i++) {
-            //记录当前i的位置
-            int tmp = i;
-            for (int j = i - 1; j < i && j >= 0; j--) {
+            for (int j = i - 1; j >= 0; j--) {
 
                 User user1 = users.get(j);
-                User user = users.get(tmp);
+                User user = users.get(j + 1);
                 if (sort == 1){
                     if (user1.grade > user.grade){
                         //升序，交换位置
-                        swap(users,tmp,j);
-                        tmp = j;
+                        swap(users,j + 1,j);
                     }
                 } else {
                     //降序
                     if (user1.grade < user.grade){
                         //升序，交换位置
-                        swap(users,tmp,j);
-                        tmp = j;
+                        swap(users,j + 1,j);
                     }
                 }
 
