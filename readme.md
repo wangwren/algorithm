@@ -6,6 +6,9 @@
 - 在表达式中，**只要高阶项，不要低阶项，也不要高阶项的系数**，剩下的部分如果为f(N)，那么时间复杂度为O(f(N))。
 - 评价一个算法流程的好坏，先看时间复杂度的指标，然后再分析不同数据样本下的实际运行时间，也就是*常数项时间*
 
+### 常见时间复杂度
+O(1)、O(logN)、O(NlogN)、O(N^2)、O(N^3)、...O(N^k)、O(2^N)、O(N!)
+
 ## 选择排序
 时间复杂度O(N^2);额外空间复杂度O(1)  \
 [选择排序](https://github.com/wangwren/algorithm/blob/master/src/basis/class01/SelectionSort.java)
