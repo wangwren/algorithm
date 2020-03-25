@@ -84,3 +84,4 @@ O(1)、O(logN)、O(NlogN)、O(N^2)、O(N^3)、...O(N^k)、O(2^N)、O(N!)
     - 选以上两种方式的一种就行。
 - 把堆的最大值和堆末尾的值交换，然后减少堆的大小之后，再去调整堆(调整的过程就是heapify的过程)，一直周而复始，时间复杂度为O(N*logN)
 - 堆的大小减小成0之后，排序完成。
+[堆排序](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/HeapSort.java)
