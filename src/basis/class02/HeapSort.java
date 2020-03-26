@@ -16,14 +16,27 @@ public class HeapSort {
         for (int i = 0; i < arr.length; i++) { //O(N)
             heapInsert(arr,i); // O(logN)
         }
+        //使用heapify实现大根堆
+        /*for (int i = arr.length - 1; i >= 0; i--) {
+            heapify(arr,i,arr.length);
+        }*/
 
         //形成大根堆后，将根顶与最后一个交换，保证数组中最后一个值最大，之后对根顶做heapify操作
         int heapLength = arr.length;
+        /*
+        自己写的
         for (int i = arr.length - 1; i > 0; i--) {
             //交换
             swap(arr,0,i);
             heapLength--;
             heapify(arr,0,heapLength);
+        }*/
+
+        //另一种写法
+        swap(arr,0,--heapLength);
+        while (heapLength > 0){ //O(N)
+            heapify(arr,0,heapLength); //O(logN)
+            swap(arr,0,--heapLength); // O(1)
         }
     }
 
