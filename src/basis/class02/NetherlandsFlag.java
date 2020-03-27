@@ -30,7 +30,7 @@ public class NetherlandsFlag {
         }
 
         //返回左边界和右边界
-        return new int[]{L + 1,R - 1};
+        return new int[]{less + 1,more - 1};
     }
 
     public static void swap(int[] arr,int i,int j){
