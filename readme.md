@@ -1,6 +1,4 @@
 # algorithm
-## 排序
-[排序.md](https://github.com/wangwren/algorithm/blob/master/sort.md)
 
 ## 时间复杂度
 - 常数时间操作：一个操作如果和样本数据量没有关系，每次都是固定时间内完成的操作，叫做常数操作。
@@ -12,9 +10,12 @@
 ### 常见时间复杂度
 O(1)、O(logN)、O(NlogN)、O(N^2)、O(N^3)、...O(N^k)、O(2^N)、O(N!)
 
+## 排序
+[排序.md](https://github.com/wangwren/algorithm/blob/master/sort.md)
+
 ## 链表
 [链表.md](https://github.com/wangwren/algorithm/blob/master/LinkedList.md)
 
 
 ## 二叉树
-[二叉树](https://github.com/wangwren/algorithm/blob/master/BinaryTree.md)
+[二叉树.md](https://github.com/wangwren/algorithm/blob/master/BinaryTree.md)
