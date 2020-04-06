@@ -31,6 +31,11 @@ public class IsBalancedTree {
         }
     }
 
+    //主函数
+    public static boolean isBalance(Node head){
+        return process(head).flag;
+    }
+
     private static Info process(Node head){
         if (head == null){
             //如果为空时，高度为0，默认平衡
