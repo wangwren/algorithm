@@ -1,8 +1,5 @@
 package basis.class05;
 
-import com.sun.istack.internal.localization.NullLocalizable;
-import jdk.nashorn.internal.objects.NativeUint8Array;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -47,7 +44,7 @@ public class IsCBT {
             //右孩子
             right = head.right;
 
-            //如果无左节点，有右节点;或者遇到了左右孩子不双全的节点后，别的节点还有左右还自己
+            //如果无左节点，有右节点;或者遇到了左右孩子不双全的节点后，别的节点还有左右孩子，即不是叶子节点
             if ((left == null && right != null) || (isMeet && !(left == null && right == null))) {
                 return false;
             }
