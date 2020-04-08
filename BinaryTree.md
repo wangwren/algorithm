@@ -104,3 +104,42 @@ class Node<V>{
     
     
 [LowestCommonAncestor](https://github.com/wangwren/algorithm/blob/master/src/basis/class05/LowestCommonAncestor.java)
+
+### 在二叉树中找到一个节点的后继节点
+
+现在有一种新的二叉树节点类型如下：
+```java
+public class Node {
+    public int value;
+    public Node left;
+    public Node right;
+    public Node parent;
+    public Node(int val) {
+        value = val;
+    }
+}
+```
+该结构比普通二叉树节点结构多了一个指向父节点的parent指针。假设有一棵Node类型的节点组成的二叉树，树中每个节点的parent指针都正确地指向自己的父节点，
+头节点的parent指向null。只给一个在二叉树中的某个节点node，请实现返回node的后继节点的函数。**在二叉树的中序遍历的序列中，node的下一个节点叫作node的后继节点**。
+
+[SuccessorNode](https://github.com/wangwren/algorithm/blob/master/src/basis/class05/SuccessorNode.java)
+
+## 二叉树的序列化和反序列化
+就是内存里的一棵树如何变成字符串形式，又如何从字符串形式变成内存里的树。
+
+- 序列化形式：
+    - 可以使用先序遍历序列化。
+    - 可以使用宽度优先遍历序列化，按层序列化。
+    
+[SerializeAndReconstructTree](https://github.com/wangwren/algorithm/blob/master/src/basis/class05/SerializeAndReconstructTree.java)
+
+## 折纸问题√
+请把一段纸条竖着放在桌子上，然后从纸条的下边向上方对折1次，压出折痕后展开。
+此时折痕是凹下去的，即折痕突起的方向指向纸条的背面。
+如果从纸条的下边向上方连续对折2次，压出折痕后展开，此时有三条折痕，从上到下依次是下折痕、下折痕和上折痕。
+
+给定一个输入参数N，代表纸条都从下边向上方连续对折N次。
+请从上到下打印所有折痕的方向。
+例如:N=1时，打印: down N=2时，打印: down down up
+
+[PaperFolding](https://github.com/wangwren/algorithm/blob/master/src/basis/class05/PaperFolding.java)
