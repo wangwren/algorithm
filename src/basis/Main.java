@@ -29,19 +29,19 @@ public class Main {
         System.out.println(0.0 / 0.0);
 
         //5. >>和>>>的区别是？
-        /*
-            A. 任何整数没有区别
+
+            /*A. 任何整数没有区别
             B. 负整数一定没有区别
             C. 浮点数可以>>运算，但是不可以>>>运算
-            D. 正整数一定没有区别
-         */
-        System.out.println(4 >> 1);
-        System.out.println(4 >>> 1);
+            D. 正整数一定没有区别*/
+
+        System.out.println("4 >> 1 = " + (4 >> 1));
+        System.out.println("4 >>> 1 = " + (4 >>> 1));
 
         System.out.println();
 
-        System.out.println(-4 >> 1);
-        System.out.println(-4 >>> 1);
+        System.out.println("-4 >> 1 = " + (-4 >> 1));
+        System.out.println("-4 >>> 1 = " + (-4 >>> 1));
 
         System.out.println();
 
@@ -65,7 +65,6 @@ public class Main {
         //9. <String, T, Alibaba> String get(String string, T t) { return string; } 此方法：编译正确
 
         //10.
-
     }
 
 
