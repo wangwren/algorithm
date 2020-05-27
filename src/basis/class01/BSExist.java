@@ -10,7 +10,7 @@ public class BSExist {
         int R = sortArr.length - 1;
 
         while (L < R){
-            int mid = L + ((R - L) >> 1);
+            int mid = L + ((R - L) >> 1); //mid = (L + R) / 2; R - L是距离，R - L一半的距离加上L，就是中点
             if (sortArr[mid] == num){
                 return true;
             } else if (sortArr[mid] > num){

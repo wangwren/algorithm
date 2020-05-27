@@ -9,7 +9,7 @@ public class BSNearLeft {
         int R = sortArray.length - 1;
         int index = -1; //记录最左的位置
         while (L <= R){
-            int mid = (L + (R - L) >> 2);
+            int mid = (L + (R - L) >> 1); //mid = (L + R) / 2; R - L是距离，R - L一半的距离加上L，就是中点
             if (sortArray[mid] >= num){
                 //如果大于等于num，就记录一下这个位置，之后继续循环找
                 index = mid;
