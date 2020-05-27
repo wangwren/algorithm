@@ -35,7 +35,8 @@ public class BubbleSort {
         arr[i] = arr[j];
         arr[j] = tmp;
 
-        //使用 ^ 异或交换两个值;使用这种方式，i和j不能相同
+        //使用 ^ 异或交换两个值;
+        // 使用这种方式，i和j不能相同，数组下标指的的内存地址相同，所以i,j不能相同；如果相同，指的是相同的内存地址，值会变成0
 //        arr[i] = arr[i] ^ arr[j];
 //        arr[j] = arr[i] ^ arr[j];
 //        arr[i] = arr[i] ^ arr[j];
