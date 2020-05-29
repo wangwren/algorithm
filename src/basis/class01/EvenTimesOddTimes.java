@@ -44,6 +44,7 @@ public class EvenTimesOddTimes {
         //             0001000  如果 x 位置上是1，结果就不是0，如果不是1结果就是0
 
         for (int i = 0; i < arr.length; i++) {
+            //也可以是等于0，也可以等于0
             if ((rightOne & arr[i]) != 0) {
                 //如果不是 x 位置上是1，就做异或操作
                 onlyOne ^= arr[i];
