@@ -30,9 +30,10 @@ class Node<V> {
 
 ### 给指定值都删除
 - 注意头结点是指定值的情况
+[DeleteGivenValue](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/DeleteGivenValue.java)
 
 ## 打印两个有序链表的公共部分
 - 给定两个有序链表的头指针head1和head2，打印两个链表的公共部分。
 - 如果两个链表的长度之和为N，时间复杂度要求为O(N)，额外空间复杂度要求为O(1)
 
-# 
+# 栈和队列
