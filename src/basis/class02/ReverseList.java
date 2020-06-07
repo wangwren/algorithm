@@ -1,4 +1,4 @@
-package basis.class04;
+package basis.class02;
 
 /**
  * 链表反转
