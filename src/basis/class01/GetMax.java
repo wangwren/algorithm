@@ -4,6 +4,10 @@ package basis.class01;
  * 找一个数组中的最大值，使用递归做
  *
  * 取一个中间值，找到左面的最大值和右面的最大值，将这两个值进行比较，取出最大值
+ *
+ * 时间复杂度，由于使用的是递归，并且满足master公式，所以，a = 2，b = 2，d = 0
+ *
+ * 所以 log(2,2) = 1 < d = 0,所以 O(N^d) = O(N)
  */
 public class GetMax {
     public static int getMax(int[] arr){

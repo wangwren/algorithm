@@ -57,11 +57,13 @@ a = a ^ b = (甲 ^ 乙) ^ 甲 = 乙;  ====> 完成交换，哪怕甲乙相等，
 ## 递归
 - 用递归方法找一个数组中的最大值？
 
-- master公式的使用,用于算递归的时间复杂度
+[GetMax](https://github.com/wangwren/algorithm/blob/master/src/basis/class01/GetMax.java)
+
+- master公式的使用,用于算递归的时间复杂度,适用与递归规模相同，b表示子问题的规模，a表示调用了几次子规模，d表示除了子问题的其他时间复杂度
 `T(N) = a * T(N/b) + O(N ^ d)`
 
 - log(b,a) > d -> 复杂度为 O(N ^ log(b,a))
-- log(b,a) = d -> 复杂度为 O(N ^ logN)
+- log(b,a) == d -> 复杂度为 O(N ^ d * logN)
 - log(b,a) < d -> 复杂度为 O(N ^ d)
 
 ## 归并排序
