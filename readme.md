@@ -35,8 +35,8 @@ O(1)、O(logN)、O(N)、O(NlogN)、O(N^2)、O(N^3)、...O(N^k)、O(2^N)、O(N!)
 ## 排序
 [排序.md](https://github.com/wangwren/algorithm/blob/master/sort.md)
 
-## 链表
-[链表.md](https://github.com/wangwren/algorithm/blob/master/LinkedList.md)
+## 链表、栈、队列
+[链表、栈、队列.md](https://github.com/wangwren/algorithm/blob/master/LinkedList.md)
 
 
 ## 二叉树

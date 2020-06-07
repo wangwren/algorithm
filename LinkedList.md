@@ -26,7 +26,7 @@ class Node<V> {
 - 分别实现反转单向链表和反转双向链表的函数。
 - 如果链表长度为N，时间复杂度要求为O(N)，额外空间复杂度要求为O(1)。
 
-[ReverseList](https://github.com/wangwren/algorithm/blob/master/src/basis/class04/ReverseList.java)
+[ReverseList](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/ReverseList.java)
 
 ### 给指定值都删除
 - 注意头结点是指定值的情况
@@ -45,17 +45,18 @@ class Node<V> {
 
 ## 栈和队列的实现
 
-- 双向链表实现
+- [双向链表实现](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/DoubleEndsQueueToStackAndQueue.java)
 
-- 数组实现(固定数组大小)
+- [数组实现(固定数组大小)](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/RingArray.java)
 
 ## 栈和队列的常见面试题
 
 - 实现一个特殊的栈，在基本功能的基础上，再实现返回栈中最小值的功能
     - pop、push、getMin操作的时间复杂度都是O(1)
     - 设计的栈类型可以使用现有的栈结构
+    - [GetMinStack](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/GetMinStack.java)
  
     
-- 如何使用栈结构实现队列结构
+- [如何使用栈结构实现队列结构](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/TwoStacksImplementQueue.java)
 
-- 如何使用队列结构实现栈结构
+- [如何使用队列结构实现栈结构](https://github.com/wangwren/algorithm/blob/master/src/basis/class02/TwoQueueImplementStack.java)
